@@ -7,7 +7,7 @@ def selection_sort(array):
             if array[i] > array[j]:
                 # swap
                 array[i], array[j] = array[j], array[i]
-    return array
+    #return array
 
 
 
@@ -15,5 +15,11 @@ arr = list(range(10, 0, -1))
 arr2 = [23, -4, 2, 6, 0, -11, 76, -299, 86, 31]
 
 
-print(selection_sort(arr))
-print(selection_sort(arr2))
+#print(selection_sort(arr))
+#print(selection_sort(arr2))
+
+selection_sort(arr)
+selection_sort(arr2)
+
+print(arr)
+print(arr2)
