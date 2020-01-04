@@ -3,9 +3,11 @@
 def counting_sort(array):
     max_el = max(array)
     aux_array = [0 for i in range(max_el+1)]
+    # count the occurrence of every element
     for i in range(len(array)):
         aux_array[array[i]] += 1
     sorted_array = []
+    # copy ordered elements to output array
     for i in range(max_el+1):
         tmp = aux_array[i]
         for j in range(tmp):
@@ -17,12 +19,15 @@ def counting_sort_v2(array):
     freq = [0] * (max_el+1)
     n = len(array)
     sorted_array = [0] * n
+    # count the occurrence of every element
     for i in range(n):
         freq[array[i]] += 1
-
+    # cumsum of frequencies
     for i in range(1, max_el+1):
         freq[i] += freq[i-1]
 
+    # set element to its position in output array
+    # decrement frequency value
     for i in range(n):
         sorted_array[freq[array[i]]-1] = array[i]
         freq[array[i]] -= 1

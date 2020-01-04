@@ -26,7 +26,7 @@ def radix_sort(array):
     maxx = max(array)
     mul = 1
     while maxx:
-        count_sort(arr, mul)
+        count_sort(array, mul)
         mul *= 10
         maxx //= 10
 
