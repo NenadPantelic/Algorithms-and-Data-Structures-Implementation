@@ -162,7 +162,7 @@ class BinarySearchTree:
         if pred.get_left() == node:
             pred.set_left(new_node)
         elif pred.get_right() == node:
-            pred.set_right(new_one)
+            pred.set_right(new_node)
         else:
             raise Exception('Wrong predecessor')
         
