@@ -6,6 +6,16 @@ Created on Fri Feb 21 14:15:18 2020
 @author: nenad
 """
 
+# indexed priority queue
+
+#O(1) search for the item with highest priority
+#O(log n) removal of the item with highest priority
+#O(log n) insertion of a new item
+
+#O(1) lookup of any item by key
+#O(log n) removal of any item
+#O(log n) updating of any item’s priority level
+
 
 from pqdict import minpq
 # Complexity - O(Elog(V)) - E (num of edges); V (num of vertices)

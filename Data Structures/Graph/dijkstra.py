@@ -6,7 +6,7 @@ Created on Fri Feb 21 12:13:43 2020
 @author: nenad
 """
 
-
+# heap(priority queue)
 from heapq import heappush, heappop
 # optimize it with indexed pq
 def dijkstra(source, graph):
